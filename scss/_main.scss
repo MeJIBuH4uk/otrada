@@ -29,17 +29,16 @@ h4 {
 }
 
 p, body, html, * {
-    font-size: 13px;
+    font-size: 15px;
     color: $grey-7;
 }
 
 a {
     text-decoration: underline;
-    color: $blue;
+    color: $white;
 
     &:hover, &:active {
         text-decoration: none;
-        color: $blue_light;
     }
 
     &:active {

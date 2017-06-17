@@ -6,8 +6,169 @@
 @import 'main';
 
 .wr {
-    max-width: 1200px;
+    max-width: 1150px;
     min-width: 320px;
-    padding: 0;
+    padding: 0 20px;
     margin: 0 auto;
+}
+
+header {
+    & {
+        position: relative;
+    }
+
+    * {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -999;
+        height: 190px;
+        background-color: $grey-5_1;
+    }
+
+    .top-menu {
+        & {
+            float: left;
+            padding-top: 45px;
+            width: 100%;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .search {
+            position: absolute;
+            width: 90px;
+            height: 25px;
+            top: 20px;
+            right: 0;
+
+            input {
+                background-color: $grey-5_1;
+                color: $grey-1_3;
+                border: none;
+                width: 100px;
+            }
+
+            input::placeholder {
+                color: $grey-1_3;
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+
+        .logo {
+            & {
+                width: 50%;
+                height: 75px;
+                display: inline-block;
+            }
+
+            img {
+                width: 90px;
+                float: left;
+                margin-right: 20px;
+            }
+
+            strong {
+                font-size: 29px;
+                text-transform: uppercase;
+                display: inline-block;
+                letter-spacing: 1px;
+                font-family: sans-serif;
+                font-weight: 500;
+                margin-top: 10px;
+                margin-bottom: 3px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        nav {
+            & {
+                width: 50%;
+                float: right;
+                padding-top: 25px;
+                text-align: right;
+            }
+
+            a {
+                text-transform: uppercase;
+                padding-top: 10px;
+                color: $grey-1_3;
+                border-top: 2px solid transparent;
+                margin-right: 20px;
+
+                &:hover {
+                    border-top: 2px solid $yellow;
+                    color: $green;
+                }
+
+                &.active {
+                    border-top: 2px solid $yellow;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        & {
+            width: 100%;
+            clear: both;
+            text-align: center;
+        }
+
+        ul {
+            li {
+                color: $white;
+                margin-right: 62px;
+                position: relative;
+                display: inline-block;
+                list-style-image: url(../img/disc.png);
+
+                &:hover {
+                    a {
+                        color: $green;
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background-color: $yellow;
+                    top: 5px;
+                    left: -15px;
+                }
+
+                &:first-child {
+                    margin-left: 20px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
