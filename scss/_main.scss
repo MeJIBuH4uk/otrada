@@ -1,0 +1,48 @@
+h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 100;
+
+    &, a {
+        color: $grey-4;
+        text-decoration: none;
+    }
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+    &, a {
+        color: $blue;
+        text-decoration: none;
+    }
+}
+
+h4 {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+p, body, html, * {
+    font-size: 13px;
+    color: $grey-7;
+}
+
+a {
+    text-decoration: underline;
+    color: $blue;
+
+    &:hover, &:active {
+        text-decoration: none;
+        color: $blue_light;
+    }
+
+    &:active {
+        color: orange;
+    }
+}
