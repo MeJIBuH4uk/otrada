@@ -822,6 +822,8 @@ main {
                     background-image: url(../img/bg-prog-1.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
+                    margin-right: 0.5%;
+                    margin-bottom: 0.5%;
                 }
 
                 a {
@@ -845,6 +847,7 @@ main {
 
             &-3 {
                 background-image: url(../img/bg-prog-3.jpg);
+                margin-right: 0;
 
                 a {
                     background-color: rgba(0, 0, 255, 0.7);
@@ -869,6 +872,7 @@ main {
 
             &-6 {
                 background-image: url(../img/bg-prog-6.jpg);
+                margin-right: 0;
 
                 a {
                     background-color: rgba(255, 0, 0, 0.7);
