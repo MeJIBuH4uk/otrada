@@ -6,10 +6,14 @@
 @import 'main';
 
 .wr {
-    max-width: 1150px;
+    max-width: 1100px;
     min-width: 320px;
     padding: 0 20px;
     margin: 0 auto;
+
+    &-2 {
+        max-width: 1900px;
+    }
 }
 
 header {
@@ -137,8 +141,8 @@ header {
             }
 
             li {
-                color: $white;
-                margin-right: 62px;
+                color: #ffffff;
+                margin: 0 50px 0 0;
                 position: relative;
                 display: inline-block;
                 list-style-image: url(../img/disc.png);
@@ -162,7 +166,7 @@ header {
                 }
 
                 &:first-child {
-                    margin-left: 20px;
+                    margin-left: 15px;
                 }
 
                 &:last-child {
@@ -326,12 +330,11 @@ main {
                 font-size: 16px;
                 color: $grey-7;
                 font-weight: 600;
-                margin-bottom: 5px;
                 text-transform: capitalize;
             }
 
             .first, .last {
-                font-size: 12px;
+                font-size: 13px;
                 line-height: 18px;
                 color: $grey-5_1;
             }
@@ -362,7 +365,7 @@ main {
                 position: relative;
                 width: 255px;
                 height: 480px;
-                margin-right: 20px;
+                margin-right: 13px;
                 float: left;
                 background-color: grey;
                 background-repeat: no-repeat;
@@ -533,19 +536,19 @@ main {
             }
 
             .submit {
-                width: 230px;
+                width: 260px;
                 padding: 15px 25px;
                 background-color: #0099ff;
                 color: #ffffff;
                 display: inline-block;
                 margin-right: 30px;
-                font-size: 14px;
+                font-size: 16px;
                 text-transform: uppercase;
             }
 
             p {
                 display: inline-block;
-                font-size: 13px;
+                font-size: 14px;
                 width: 650px;
                 vertical-align: sub;
                 color: $white;
@@ -568,8 +571,8 @@ main {
             }
 
             h2 {
-                font-size: 20px;
-                color: $grey-7;
+                font-size: 24px;
+                color: #333;
                 margin-bottom: 15px;
 
                 span {
@@ -583,7 +586,7 @@ main {
             strong {
                 position: relative;
                 text-transform: uppercase;
-                font-size: 25px;
+                font-size: 30px;
                 display: inline-block;
                 font-weight: 600;
                 margin-bottom: 70px;
@@ -605,17 +608,13 @@ main {
         .block {
             &-1, &-2, &-3, &-4 {
                 & {
-                    padding: 15px 30px 25px 30px;
+                    padding: 15px 25px 25px 25px;
                     width: 22.5%;
                     position: relative;
                     height: 275px;
                     float: left;
-                    margin-left: 2.5%;
+                    margin-left: 3.3%;
                     box-shadow: 1px 2px 5px #888;
-                }
-
-                &:last-child {
-                    margin-right: 0;
                 }
 
                 address, p, .message, a {
@@ -628,11 +627,11 @@ main {
 
                 time {
                     color: $grey-3_1;
-                    font-size: 11px;
+                    font-size: 12px;
 
                     span {
                         color: $grey-7;
-                        font-size: 11px;
+                        font-size: 12px;
                     }
                 }
 
@@ -701,14 +700,18 @@ main {
                     bottom: 21px;
                 }
             }
+
+            &-1 {
+                margin-left: 0;
+            }
         }
 
         .readAll {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
             color: #333;
             text-transform: uppercase;
-            margin-left: 43%;
+            margin-left: 42%;
             margin-top: 50px;
             text-decoration: none;
             display: inline-block;
@@ -727,6 +730,7 @@ main {
 
     .programms {
         width: 100%;
+        float: left;
         position: relative;
         padding-bottom: 50px;
         background: linear-gradient(to top, #e3e3e5, #f5f6f8);
@@ -779,7 +783,7 @@ main {
             color: #333;
             text-transform: uppercase;
             bottom: 17px;
-            left: 45%;
+            left: 41.5%;
             text-decoration: none;
             position: absolute;
 
@@ -794,12 +798,82 @@ main {
             }
         }
 
-        .bg-prog {
-            width: 100%;
-            height: 425px;
-            background-image: url(../img/bg-prog.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+        //.bg-prog {
+        //    width: 100%;
+        //    height: 425px;
+        //    background-image: url(../img/bg-prog.jpg);
+        //    background-repeat: no-repeat;
+        //    background-size: cover;
+        //}
+
+        .prog {
+            &-1,
+            &-2,
+            &-3,
+            &-4,
+            &-5,
+            &-6 {
+                & {
+                    width: 33%;
+                    height: 315px;
+                    float: left;
+                    position: relative;
+                    text-align: center;
+                    background-image: url(../img/bg-prog-1.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                a {
+                    background-color: rgba(255, 0, 0, 0.7);
+                    position: absolute;
+                    bottom: 0;
+                    left: 24.5%;
+                    height: 22%;
+                    width: 50%;
+                    line-height: 220%;
+                }
+            }
+
+            &-2 {
+                background-image: url(../img/bg-prog-2.jpg);
+
+                a {
+                    background-color: rgba(0, 128, 0, 0.7);
+                }
+            }
+
+            &-3 {
+                background-image: url(../img/bg-prog-3.jpg);
+
+                a {
+                    background-color: rgba(0, 0, 255, 0.7);
+                }
+            }
+
+            &-4 {
+                background-image: url(../img/bg-prog-4.jpg);
+
+                a {
+                    background-color: rgba(0, 128, 0, 0.7);
+                }
+            }
+
+            &-5 {
+                background-image: url(../img/bg-prog-5.jpg);
+
+                a {
+                    background-color: rgba(0, 0, 255, 0.7);
+                }
+            }
+
+            &-6 {
+                background-image: url(../img/bg-prog-6.jpg);
+
+                a {
+                    background-color: rgba(255, 0, 0, 0.7);
+                }
+            }
         }
     }
 }
@@ -813,6 +887,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 0;
+        clear: both;
     }
 
     * {
@@ -871,10 +946,15 @@ footer {
             float: left;
 
             a {
+                transition: all.5s ease;
                 font-size: 12px;
                 text-transform: lowercase;
                 text-decoration: none;
                 border-bottom: 1px dashed $white;
+
+                &:hover {
+                    border-bottom: 1px dashed transparent;
+                }
             }
         }
 
