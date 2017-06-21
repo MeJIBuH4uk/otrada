@@ -1,3 +1,26 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
 h2 {
     font-size: 24px;
     margin-bottom: 5px;
@@ -30,12 +53,13 @@ h4 {
 
 p, body, html, * {
     font-size: 15px;
+    font-family: PF DinText Pro Regular;
     color: $grey-7;
 }
 
 a {
     text-decoration: underline;
-    color: $white;
+    color: #1b74b8;
 
     &:hover, &:active {
         text-decoration: none;
