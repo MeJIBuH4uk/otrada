@@ -1,0 +1,189 @@
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-Medium.eot"); src: url("../fonts/PFDinTextPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Medium.woff2") format("woff2"), url("../fonts/PFDinTextPro-Medium.woff") format("woff"), url("../fonts/PFDinTextPro-Medium.ttf") format("truetype"), url("../fonts/PFDinTextPro-Medium.svg#PFDinTextPro-Medium") format("svg"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'PF DinText Pro ExtraThin'; src: url("../fonts/PFDinTextPro-ExtraThin.eot"); src: url("../fonts/PFDinTextPro-ExtraThin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-ExtraThin.woff2") format("woff2"), url("../fonts/PFDinTextPro-ExtraThin.woff") format("woff"), url("../fonts/PFDinTextPro-ExtraThin.ttf") format("truetype"), url("../fonts/PFDinTextPro-ExtraThin.svg#PFDinTextPro-ExtraThin") format("svg"); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-LightItalic.eot"); src: url("../fonts/PFDinTextPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-LightItalic.woff2") format("woff2"), url("../fonts/PFDinTextPro-LightItalic.woff") format("woff"), url("../fonts/PFDinTextPro-LightItalic.ttf") format("truetype"), url("../fonts/PFDinTextPro-LightItalic.svg#PFDinTextPro-LightItalic") format("svg"); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-Regular.eot"); src: url("../fonts/PFDinTextPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Regular.woff2") format("woff2"), url("../fonts/PFDinTextPro-Regular.woff") format("woff"), url("../fonts/PFDinTextPro-Regular.ttf") format("truetype"), url("../fonts/PFDinTextPro-Regular.svg#PFDinTextPro-Regular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'PF DinText Pro ExtraThin'; src: url("../fonts/PFDinTextPro-ExtraThinItalic.eot"); src: url("../fonts/PFDinTextPro-ExtraThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-ExtraThinItalic.woff2") format("woff2"), url("../fonts/PFDinTextPro-ExtraThinItalic.woff") format("woff"), url("../fonts/PFDinTextPro-ExtraThinItalic.ttf") format("truetype"), url("../fonts/PFDinTextPro-ExtraThinItalic.svg#PFDinTextPro-ExtraThinItalic") format("svg"); font-weight: 100; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-BoldItalic.eot"); src: url("../fonts/PFDinTextPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-BoldItalic.woff2") format("woff2"), url("../fonts/PFDinTextPro-BoldItalic.woff") format("woff"), url("../fonts/PFDinTextPro-BoldItalic.ttf") format("truetype"), url("../fonts/PFDinTextPro-BoldItalic.svg#PFDinTextPro-BoldItalic") format("svg"); font-weight: bold; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-MediumItalic.eot"); src: url("../fonts/PFDinTextPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-MediumItalic.woff2") format("woff2"), url("../fonts/PFDinTextPro-MediumItalic.woff") format("woff"), url("../fonts/PFDinTextPro-MediumItalic.ttf") format("truetype"), url("../fonts/PFDinTextPro-MediumItalic.svg#PFDinTextPro-MediumItalic") format("svg"); font-weight: 500; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-Bold.eot"); src: url("../fonts/PFDinTextPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Bold.woff2") format("woff2"), url("../fonts/PFDinTextPro-Bold.woff") format("woff"), url("../fonts/PFDinTextPro-Bold.ttf") format("truetype"), url("../fonts/PFDinTextPro-Bold.svg#PFDinTextPro-Bold") format("svg"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-Italic.eot"); src: url("../fonts/PFDinTextPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Italic.woff2") format("woff2"), url("../fonts/PFDinTextPro-Italic.woff") format("woff"), url("../fonts/PFDinTextPro-Italic.ttf") format("truetype"), url("../fonts/PFDinTextPro-Italic.svg#PFDinTextPro-Italic") format("svg"); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-Thin.eot"); src: url("../fonts/PFDinTextPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Thin.woff2") format("woff2"), url("../fonts/PFDinTextPro-Thin.woff") format("woff"), url("../fonts/PFDinTextPro-Thin.ttf") format("truetype"), url("../fonts/PFDinTextPro-Thin.svg#PFDinTextPro-Thin") format("svg"); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'PF DinText Pro Extra'; src: url("../fonts/PFDinTextPro-ExtraBlackItalic.eot"); src: url("../fonts/PFDinTextPro-ExtraBlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-ExtraBlackItalic.woff2") format("woff2"), url("../fonts/PFDinTextPro-ExtraBlackItalic.woff") format("woff"), url("../fonts/PFDinTextPro-ExtraBlackItalic.ttf") format("truetype"), url("../fonts/PFDinTextPro-ExtraBlackItalic.svg#PFDinTextPro-ExtraBlackItalic") format("svg"); font-weight: 900; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-ThinItalic.eot"); src: url("../fonts/PFDinTextPro-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-ThinItalic.woff2") format("woff2"), url("../fonts/PFDinTextPro-ThinItalic.woff") format("woff"), url("../fonts/PFDinTextPro-ThinItalic.ttf") format("truetype"), url("../fonts/PFDinTextPro-ThinItalic.svg#PFDinTextPro-ThinItalic") format("svg"); font-weight: 100; font-style: italic; }
+@font-face { font-family: 'PF DinText Pro'; src: url("../fonts/PFDinTextPro-Light.eot"); src: url("../fonts/PFDinTextPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Light.woff2") format("woff2"), url("../fonts/PFDinTextPro-Light.woff") format("woff"), url("../fonts/PFDinTextPro-Light.ttf") format("truetype"), url("../fonts/PFDinTextPro-Light.svg#PFDinTextPro-Light") format("svg"); font-weight: 300; font-style: normal; }
+body { width: 100%; margin: 0; padding: 0; background-color: #fff; }
+
+html { margin: 0; padding: 0; }
+
+* { padding: 0; margin: 0; font-weight: normal; font-style: normal; list-style: none; box-sizing: border-box; text-decoration: none; outline: none; color: #000; }
+
+h2 { font-size: 24px; margin-bottom: 5px; font-weight: 100; }
+h2, h2 a { color: #a5a5a5; text-decoration: none; }
+
+h3 { font-size: 16px; margin-bottom: 15px; font-weight: normal; }
+h3, h3 a { color: #0099ff; text-decoration: none; }
+
+h4 { color: #fff; font-size: 12px; text-transform: uppercase; font-weight: 100; margin-bottom: 20px; }
+
+p, body, html { font-size: 15px; font-family: PF DinText Pro Regular; color: #333; }
+
+a { text-decoration: underline; color: #1b74b8; }
+a:hover, a:active { text-decoration: none; }
+a:active { color: orange; }
+
+.wr { max-width: 1180px; min-width: 320px; padding: 0 35px; margin: 0 auto; position: relative; }
+.wr-2 { max-width: 1900px; }
+
+.color-boxes ul:after, .forum ul:after, .programms ul:after, .teachers ul:after { content: ''; display: table; clear: both; }
+
+.about .text h2:before, .form .title h2:before, .forum .title h2:before, .programms .title h2:before, .teachers .title h2:before { content: '\201d'; display: inline-block; position: absolute; font-size: 72px; font-weight: 400; color: #84d83c; font-family: 'PF DinText Pro'; margin-left: -36px; margin-top: -21px; }
+
+.about .text strong:before, .form .title strong:before, .forum .title strong:before, .programms .title strong:before, .teachers .title strong:before { content: ''; display: block; position: absolute; top: 75px; margin-left: -30px; left: 50%; height: 3px; background-color: #84d83c; width: 60px; }
+
+.about .text h2, .form .title h2, .forum .title h2, .programms .title h2, .teachers .title h2 { font-size: 24px; color: #000; font-family: PF DinText Pro Light; position: relative; margin-bottom: 12px; }
+.about .text strong, .form .title strong, .forum .title strong, .programms .title strong, .teachers .title strong { position: relative; text-transform: uppercase; font-size: 30px; display: inline-block; font-family: PF DinText Pro Medium; font-weight: 500; margin-bottom: 73px; }
+
+.readAll { font-size: 14px; padding-right: 24px; color: #333; text-transform: uppercase; font-family: 'PF DinText Pro'; font-weight: bold; text-decoration: none; display: inline-block; margin: 50px auto 0; background: url(../img/arrow.png); background-repeat: no-repeat; background-position: right center; }
+
+header { position: relative; padding-bottom: 20px; background-color: #83818c; text-decoration: none; color: #ffffff; }
+header a { text-decoration: none; }
+header .logo { float: left; margin-top: 15px; margin-left: 10px; }
+header .logo img { display: block; }
+header .search { margin-top: 15px; float: right; height: 32px; margin-left: 200px; width: 320px; text-align: right; border: 1px solid red; }
+header .search input { background-color: #83818c; color: #f1f0f6; border: none; width: 100px; }
+header .search input::placeholder { color: #f1f0f6; font-style: italic; text-decoration: underline; }
+header .top-menu { float: right; }
+header .top-menu a { font-family: 'PF DinText Pro'; text-transform: uppercase; border-top: 2px solid transparent; margin-left: 20px; font-size: 16px; padding-top: 13px; float: left; }
+header .top-menu a.active { border-top-color: #fefda0; }
+header .top-menu a:first-child { margin-left: 0; }
+header .main-menu { clear: both; padding-top: 19px; }
+header .main-menu li { margin-left: 23px; margin-right: 29px; position: relative; display: inline-block; }
+header .main-menu li:before { content: ''; display: block; position: absolute; width: 7px; height: 7px; border-radius: 50%; background-color: #faff96; top: 5px; left: -23px; }
+header .main-menu li:last-child { margin-right: 0; }
+header .main-menu a { color: #ffffff; text-transform: uppercase; font-family: 'PF DinText Pro'; font-weight: bold; font-size: 16px; }
+header .main-menu a:hover { color: #84d83c; }
+
+.slider { clear: both; position: relative; height: 720px; }
+.slider li { text-align: center; height: 720px; position: relative; background-position: bottom center; padding-top: 313px; }
+.slider li:before { content: ''; display: block; position: absolute; top: 0; left: 0; z-index: 1; height: 625px; width: 100%; background-color: rgba(0, 0, 0, 0.45); }
+.slider li h2, .slider li p, .slider li .slideButton { color: #fff; font-family: 'PF DinText Pro'; position: relative; z-index: 2; }
+.slider li h2 { font-size: 48px; font-weight: 500; margin-bottom: 30px; text-transform: uppercase; }
+.slider li p { font-size: 24px; font-weight: normal; line-height: 100%; margin-bottom: 51px; }
+.slider li .slideButton { width: 265px; border: 2px solid rgba(255, 255, 255, 0.76); font-weight: bold; font-size: 16px; display: inline-block; padding: 14px 0; text-transform: uppercase; }
+.slider .nav { top: 50%; position: absolute; z-index: 999; margin-top: -15px; width: 100%; }
+.slider .nav .arrow { width: 17px; height: 30px; display: block; position: absolute; cursor: pointer; opacity: 0.7; }
+.slider .nav .arrow:hover { opacity: 1; }
+.slider .nav .arrow.-left:before, .slider .nav .arrow.-right:before { content: ''; display: block; position: absolute; width: 22px; height: 22px; border-color: #ffffff; border-style: solid; border-width: 5px 5px 0 0; }
+.slider .nav .arrow.-left { left: 0; }
+.slider .nav .arrow.-left:before { transform: rotate(-135deg); right: 0; }
+.slider .nav .arrow.-right { right: 0; }
+.slider .nav .arrow.-right:before { transform: rotate(45deg); left: 0; }
+.slider .nav-disc { font-size: 0; width: 100%; z-index: 5; position: absolute; text-align: center; bottom: 40px; }
+.slider .nav-disc a { border: 1px solid white; border-radius: 50%; width: 15px; height: 15px; display: inline-block; position: relative; margin-left: 10px; }
+.slider .nav-disc a.active:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; width: 8px; height: 8px; border-radius: 50%; background-color: #fff; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.slider .nav-disc a:first-child { margin-left: 0; }
+
+.about { margin-top: 45px; }
+.about .text { width: 100%; height: 50%; text-align: center; }
+.about .text h3 { font-size: 24px; font-weight: normal; margin-bottom: 15px; display: block; color: #333; }
+.about .text h4 { font-size: 18px; color: #333; font-weight: 400; text-transform: none; margin-left: -5px; margin-bottom: 0; }
+.about .text .first, .about .text .last { color: #83818c; }
+.about .text .first { margin-bottom: 20px; text-align: center; }
+.about .text .first a { font-size: 12px; font-weight: 600; }
+
+.color-boxes { width: 100%; height: 50%; margin-bottom: 70px; margin-top: 50px; }
+.color-boxes ul { margin: 0 -15px; }
+.color-boxes li { padding: 0 15px; width: 25%; float: left; list-style: none; }
+.color-boxes .box { transition: all .4s ease; position: relative; height: 480px; background-color: grey; background-repeat: no-repeat; text-align: center; }
+.color-boxes .box:hover { opacity: 0.8; }
+.color-boxes .box.-green { background: linear-gradient(to bottom, #1f682b, #64c945); }
+.color-boxes .box.-green .button:hover { background-color: #faa828; }
+.color-boxes .box.-blue { background: linear-gradient(to top, #00529c, #227bbd); }
+.color-boxes .box.-blue .button:hover { background-color: #e91e1a; }
+.color-boxes .box.-orange { background: linear-gradient(to bottom, #e9781b, #faa828); }
+.color-boxes .box.-orange .button:hover { background-color: #64c945; }
+.color-boxes .box.-red { margin-right: 0; background: linear-gradient(to top, #b71415, #e91e1a); }
+.color-boxes .box.-red .button:hover { background-color: #227bbd; }
+.color-boxes .img { position: relative; overflow: hidden; }
+.color-boxes .img img { max-width: 100%; margin-bottom: 24px; }
+.color-boxes h4 { text-transform: uppercase; margin-bottom: 19px; color: #ffffff; font-family: "PF DinText Pro Medium"; font-size: 18px; }
+.color-boxes p { color: #ffffff; line-height: 22px; }
+.color-boxes .button { transition: all .3s ease; margin: 0 auto; display: block; text-decoration: none; text-align: center; color: #ffffff; height: 32px; line-height: 32px; width: 185px; position: absolute; left: 50%; text-transform: uppercase; border: 1px solid #ffffff; cursor: pointer; border-radius: 20px; font-weight: 600; bottom: 25px; margin-left: -92.5px; }
+
+.form { width: 100%; height: 641px; background-repeat: no-repeat; background-size: cover; background-image: url("../img/form.jpg"); }
+.form .title { text-align: center; padding-top: 50px; margin-bottom: -6px; }
+.form .title h2, .form .title strong { color: #ffffff; }
+.form form label { width: 31.73%; display: inline-block; margin-right: 2%; font-size: 24px; font-weight: normal; color: #84d83c; margin-bottom: 40px; }
+.form form label:nth-child(3) { margin-right: 0; }
+.form form label.text { font-size: 16px; color: #ffffff; width: 100%; margin-bottom: 31px; }
+.form form label.text textarea { width: 100%; height: 145px; border: none; border-radius: 5px; margin-top: 7px; }
+.form form label input { border: none; border-radius: 5px; width: 100%; margin-top: 7px; height: 40px; }
+.form form .submit { width: 266px; height: 50px; line-height: 50px; text-align: center; margin-right: 40px; background-color: #0099ff; color: #ffffff; cursor: pointer; text-decoration: none; display: inline-block; font-size: 16px; text-transform: uppercase; }
+.form form .submit:hover { background-color: #47b1f8; }
+.form form p { display: inline-block; font-size: 16px; width: 750px; vertical-align: sub; color: #ffffff; font-style: italic; }
+
+.forum { padding-bottom: 83px; text-align: center; width: 100%; background-color: #ffffff; }
+.forum .title { text-align: center; clear: both; padding-top: 45px; }
+.forum ul { margin: 15px -15px 0; text-align: left; }
+.forum li { float: left; width: 25%; height: 275px; padding: 0 15px; }
+.forum .item { padding: 16px 30px; position: relative; box-shadow: 1px 2px 5px #888; background-color: #f9fafe; }
+.forum address, .forum .message, .forum a { font-size: 12px; }
+.forum time, .forum h4 { margin-bottom: 15px; }
+.forum time { color: #ccc; font-size: 12px; display: block; font-family: 'PT Sans Regular'; margin-bottom: 9px; }
+.forum time span { color: #333; font-size: 12px; }
+.forum h4 { font-size: 16px; text-transform: uppercase; font-weight: 600; margin-bottom: 6px; color: black; font-family: 'PF DinText Pro'; }
+.forum address { color: #808080; margin-bottom: 18px; font-family: 'PF DinText Pro'; font-size: 14px; font-weight: 500; font-style: italic; }
+.forum p { color: #333; height: 117px; font-size: 14px; line-height: 16px; font-family: 'PF DinText Pro Regular'; font-weight: normal; font-style: normal; }
+.forum a { text-transform: uppercase; font-weight: bold; color: #0074f1; font-size: 14px; text-decoration: none; font-family: 'PF DinText Pro'; }
+.forum a:hover { color: #47b1f8; }
+.forum .info { float: right; }
+.forum .message, .forum .share { cursor: pointer; display: inline-block; vertical-align: middle; background-repeat: no-repeat; }
+.forum .message { padding-left: 18px; margin-right: 15px; text-decoration: none; background-image: url(../img/messa.png); }
+.forum .share { width: 10px; height: 12px; background-image: url(../img/share.png); }
+
+.programms { padding-bottom: 50px; background: linear-gradient(to top, #e3e3e5, #f5f6f8); text-align: center; }
+.programms .title { text-align: center; clear: both; padding: 40px 0 12px; }
+.programms ul li { float: left; width: 33.33333%; height: 322px; border: 3px solid #ffffff; position: relative; background: yellow; }
+.programms ul li .label { width: 350px; position: absolute; bottom: 0; height: 70px; font-family: "PF DinText Pro", sans-serif; font-weight: 500; color: #ffffff; font-size: 18px; display: block; text-transform: uppercase; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin-left: 50%; padding-top: 10px; }
+.programms ul li .label strong { font-size: 30px; line-height: 27px; display: block; color: #ffffff; }
+.programms ul li:nth-child(1), .programms ul li:nth-child(2), .programms ul li:nth-child(3) { border-top: 6px; }
+.programms ul li:nth-child(4), .programms ul li:nth-child(5), .programms ul li:nth-child(6) { border-bottom: 6px; }
+.programms ul li.-green .label { background-color: rgba(52, 137, 53, 0.91); }
+.programms ul li.-blue .label { background-color: rgba(14, 84, 140, 0.9); }
+.programms ul li.-red .label { background-color: rgba(214, 26, 24, 0.91); }
+.programms .readAll { margin-top: 35px; }
+
+.teachers { text-align: center; padding: 60px 0 72px; }
+.teachers > img { width: 100%; }
+.teachers ul { margin: 72px 0 60px; }
+.teachers ul li { width: 16.66667%; padding: 0 15px; float: left; }
+.teachers ul .item { text-align: center; }
+.teachers ul .item .img { width: 160px; display: block; border: 1px solid black; border-radius: 50%; margin-bottom: 20px; background-repeat: no-repeat; }
+.teachers ul .item .img img { width: 100%; }
+.teachers ul .item h4 { font-size: 14px; font-family: "PF DinText Pro", sans-serif; font-weight: bold; color: black; text-transform: uppercase; margin-bottom: 10px; }
+.teachers ul .item p { font-family: "PF DinText Pro", sans-serif; font-size: 14px; font-style: italic; font-weight: 500; }
+
+footer { height: 940px; padding-top: 40px; background-image: url("../img/footer-bg.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 0 0; clear: both; }
+footer * { color: #ffffff; }
+footer h2 { text-transform: uppercase; margin-bottom: 70px; display: block; font-size: 27px; text-align: center; position: relative; }
+footer h2:before { content: ''; display: block; position: absolute; bottom: -40px; left: 48%; height: 3px; background-color: #84d83c; width: 50px; }
+footer h3 { font-size: 27px; font-weight: 600; color: #84d83c; }
+footer .adress { width: 100%; margin-bottom: 50px; float: left; }
+footer .adress p { text-align: center; margin-bottom: 10px; font-size: 21px; }
+footer .adress p span { font-size: 45px; margin-right: 10px; }
+footer .adress .adr, footer .adress .phone, footer .adress .mail { width: 27%; display: block; float: left; }
+footer .adress .adr a, footer .adress .phone a, footer .adress .mail a { transition: all .5s ease; font-size: 12px; text-transform: lowercase; text-decoration: none; border-bottom: 1px dashed #ffffff; }
+footer .adress .adr a:hover, footer .adress .phone a:hover, footer .adress .mail a:hover { border-bottom: 1px dashed transparent; }
+footer .adress .adr span { font-weight: 600; display: block; margin-bottom: -15px; margin-top: 20px; }
+footer .adress .adr address { font-weight: 400; font-size: 14px; }
+footer .adress .adr b { font-size: 20px; }
+footer .adress .phone { width: 20%; margin-left: 10%; margin-top: 35px; }
+footer .adress .phone address { font-size: 20px; margin-bottom: 15px; }
+footer .adress .mail { width: 24%; float: right; }
+footer .adress .mail h3 { margin-bottom: 3px; }
+footer .adress .mail p { text-align: left; font-size: 18px; margin-bottom: 15px; }
+footer .map { clear: both; }
+footer .rights { width: 100%; padding: 40px 40px 40px 20px; }
+footer .rights .soc { float: right; }
+
+/*# sourceMappingURL=style.css.map */

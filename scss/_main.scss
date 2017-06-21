@@ -15,10 +15,10 @@ html {
     margin: 0;
     font-weight: normal;
     font-style: normal;
+    list-style: none;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    color: #000;
 }
 
 h2 {
@@ -51,7 +51,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-p, body, html, * {
+p, body, html {
     font-size: 15px;
     font-family: PF DinText Pro Regular;
     color: $grey-7;
