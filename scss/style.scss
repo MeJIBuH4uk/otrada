@@ -18,6 +18,10 @@
     }
 }
 
+.bg {
+    background: #f9fafe;
+}
+
 %clear {
     &:after {
         content: '';
@@ -41,13 +45,11 @@
 }
 
 %line {
-    &:before {
+    &:after {
         content: '';
         display: block;
-        position: absolute;
-        top: 75px;
-        margin-left: -30px;
-        left: 50%;
+        position: relative;
+        margin: 40px auto 0;
         height: 3px;
         background-color: $green;;
         width: 60px;
