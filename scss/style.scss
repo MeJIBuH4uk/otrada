@@ -1200,6 +1200,10 @@ header {
 }
 
 .aboutStudio {
+    & {
+        margin-bottom: 15px;
+    }
+
     .fstAbout, .sndAbout {
         img {
             width: 49%;
@@ -1257,6 +1261,34 @@ header {
         h2 {
             padding-top: 75px;
         }
+    }
+}
+
+.sliderMini {
+
+}
+
+.video {
+    & {
+        padding: 90px 0;
+    }
+
+    .title {
+        & {
+            @extend  %headers;
+            text-align: center;
+        }
+
+        strong {
+            @extend %line;
+            @extend %quote;
+        }
+    }
+
+    iframe {
+        display: block;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 }
 
