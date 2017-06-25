@@ -676,7 +676,7 @@ header {
                 resize: none;
             }
 
-            input {;
+            input {
                 height: 40px;
             }
 
@@ -1023,6 +1023,123 @@ header {
                 font-weight: 500;
             }
         }
+    }
+    
+    &.-grey {
+        background: linear-gradient(to top, #d9d9da, #f4f5f6);
+    }
+}
+
+.club-type {
+    & {
+        padding-bottom: 84px;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 44px;
+        @extend %headers;
+
+        strong {
+            margin-bottom: 88px;
+
+            &:before {
+                top: 73px;
+            }
+        }
+    }
+
+    ul {
+        margin: 0 -15px;
+        @extend %clear;
+
+        li {
+            & {
+                width: percentage(1/4);
+                height: 370px;
+                padding: 0 15px;
+                text-align: center;
+                float: left;
+            }
+
+            .item {
+
+
+                .img {
+                    & {
+                        margin-bottom: 24px;
+                    }
+
+                    img {
+                        width: 100%;
+                        box-shadow: 2px 1px 10px $grey-3;
+                    }
+                }
+
+                h4 {
+                    font-size: 24px;
+                    font-family: $font-base;
+                    color: #000;
+                    text-transform: none;
+                    line-height: 1;
+                    margin-bottom: 16px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 17.9px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    font-family: $font-base;
+                }
+            }
+        }
+    }
+}
+
+.quest {
+    .wr {
+        padding: 0 30px;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 43px;
+        @extend %headers;
+
+        strong {
+            margin-bottom: 73px;
+        }
+    }
+
+    p, h4, .strong {
+        font-family: $font-base;
+    }
+
+    .strong, h4 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 48px;
+        line-height: 20px;
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+    }
+
+    h4 {
+        margin-bottom: 19px;
+        color: #000;
+    }
+
+    .strong {
+        font-style: italic;
+        margin-bottom: 31px;
     }
 }
 
