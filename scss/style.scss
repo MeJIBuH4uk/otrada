@@ -1056,10 +1056,23 @@ header {
         li {
             & {
                 width: percentage(1/4);
-                height: 370px;
+                min-height: 370px;
                 padding: 0 15px;
                 text-align: center;
                 float: left;
+
+                @include bp(max-width, $bp-medium) {
+                    width: percentage(1/2);
+                    margin-bottom: 30px;
+
+                    &:nth-child(2n+1) {
+                        clear: left;
+                    }
+                }
+
+                @include bp(max-width, $bp-small) {
+                    width: percentage(1);
+                }
             }
 
             .item {
