@@ -100,6 +100,11 @@ header {
         background-color: #83818c;
         text-decoration: none;
         color: $white;
+
+        &.-fix {
+            z-index: 9999;
+            background-color: rgba(131, 129, 140, 0.81);
+        }
     }
 
     a {
@@ -1026,7 +1031,7 @@ header {
             }
         }
     }
-    
+
     &.-grey {
         background: linear-gradient(to top, #d9d9da, #f4f5f6);
     }
@@ -1078,7 +1083,6 @@ header {
             }
 
             .item {
-
 
                 .img {
                     & {
@@ -1155,6 +1159,104 @@ header {
     .strong {
         font-style: italic;
         margin-bottom: 31px;
+    }
+}
+
+.writingOn {
+    & {
+        margin-top: -190px;
+        height: 915px;
+        background-image: url('../img/bg-theatre.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+        @extend %clear;
+    }
+
+    h2, a {
+        font-family: $font-base;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        padding-top: 650px;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: bold;
+        background: linear-gradient(to top, #a8060a, #f10f0f);
+        text-align: center;
+        padding: 20px 85px;
+        line-height: 80px;
+        text-decoration: none;
+        margin-bottom: 40px;
+    }
+}
+
+.aboutStudio {
+    .fstAbout, .sndAbout {
+        img {
+            width: 49%;
+            float: right;
+            margin-left: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: $font-base;
+            font-weight: 500;
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        p, h4, h5 {
+            font-family: $font-base;
+            font-weight: normal;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: #000;
+            text-transform: none;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+    }
+
+    .fstAbout {
+        @extend %clear;
+        margin-top: 75px;
+    }
+
+    .sndAbout {
+        & {
+            margin-top: 25px;
+        }
+
+        img {
+            margin-right: 50px;
+            margin-left: 0;
+            float: left;
+        }
+
+        h2 {
+            padding-top: 75px;
+        }
     }
 }
 
