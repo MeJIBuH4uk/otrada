@@ -1164,7 +1164,7 @@ header {
 
 .writingOn {
     & {
-        margin-top: -190px;
+        margin-top: -210px;
         height: 915px;
         background-image: url('../img/bg-theatre.jpg');
         background-repeat: no-repeat;
@@ -1172,6 +1172,18 @@ header {
         text-align: center;
         position: relative;
         @extend %clear;
+
+        @include bp(max-width, $bp-large) {
+            margin-top: -350px;
+        }
+
+        @include bp(max-width, $bp-medium) {
+            margin-top: -460px;
+        }
+
+        @include bp(max-width, $bp-small-2) {
+            margin-top: -470px;
+        }
     }
 
     h2, a {
@@ -1184,7 +1196,15 @@ header {
         font-size: 48px;
         font-weight: 500;
         margin-bottom: 50px;
-        padding-top: 650px;
+        padding-top: 680px;
+
+        @include bp(max-width, $bp-large-2) {
+            padding-top: 630px;
+        }
+
+        @include bp(max-width, $bp-small-2) {
+            padding-top: 570px;
+        }
     }
 
     a {
