@@ -1222,6 +1222,7 @@ header {
 .aboutStudio {
     & {
         margin-bottom: 15px;
+        @extend %clear;
     }
 
     .fstAbout, .sndAbout {
@@ -1379,7 +1380,20 @@ header {
 }
 
 .sliderMini {
+    & {
+        height: 335px;
+        padding: 50px 0;
+        background: #1a1416;
+        @extend %clear;
+    }
 
+    li {
+
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 .video {
