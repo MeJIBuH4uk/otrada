@@ -291,7 +291,7 @@ header {
             background-position: bottom center;
             padding-top: 313px;
 
-            &:before {
+            &.item:before {
                 content: '';
                 display: block;
                 position: absolute;
