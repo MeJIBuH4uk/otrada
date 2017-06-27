@@ -336,98 +336,98 @@ header {
         }
     }
 
-    .nav {
-        top: 50%;
-        position: absolute;
-        z-index: 999;
-        margin-top: -15px;
-        width: 100%;
-
-        .arrow {
-            & {
-                width: 17px;
-                height: 30px;
-                display: block;
-                position: absolute;
-                cursor: pointer;
-                opacity: 0.7;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-
-            &.-left, &.-right {
-                &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 22px;
-                    height: 22px;
-                    border-color: $white;
-                    border-style: solid;
-                    border-width: 5px 5px 0 0;
-                }
-            }
-
-            &.-left {
-                left: 0;
-
-                &:before {
-                    transform: rotate(-135deg);
-                    right: 0;
-                }
-            }
-
-            &.-right {
-                right: 0;
-
-                &:before {
-                    transform: rotate(45deg);
-                    left: 0;
-                }
-            }
-        }
-
-        &-disc {
-            & {
-                font-size: 0;
-                width: 100%;
-                z-index: 5;
-                position: absolute;
-                text-align: center;
-                bottom: 40px;
-            }
-
-            a {
-                border: 1px solid white;
-                border-radius: 50%;
-                width: 14px;
-                height: 14px;
-                display: inline-block;
-                position: relative;
-                margin-left: 10px;
-
-                &.active {
-                    &:before {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        top: 2px;
-                        left: 2px;
-                        width: 8px;
-                        height: 8px;
-                        border-radius: 50%;
-                        background-color: $white;
-                    }
-                }
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
+    //.nav {
+    //    top: 50%;
+    //    position: absolute;
+    //    z-index: 999;
+    //    margin-top: -15px;
+    //    width: 100%;
+    //
+    //    .arrow {
+    //        & {
+    //            width: 17px;
+    //            height: 30px;
+    //            display: block;
+    //            position: absolute;
+    //            cursor: pointer;
+    //            opacity: 0.7;
+    //
+    //            &:hover {
+    //                opacity: 1;
+    //            }
+    //        }
+    //
+    //        &.-left, &.-right {
+    //            &:before {
+    //                content: '';
+    //                display: block;
+    //                position: absolute;
+    //                width: 22px;
+    //                height: 22px;
+    //                border-color: $white;
+    //                border-style: solid;
+    //                border-width: 5px 5px 0 0;
+    //            }
+    //        }
+    //
+    //        &.-left {
+    //            left: 0;
+    //
+    //            &:before {
+    //                transform: rotate(-135deg);
+    //                right: 0;
+    //            }
+    //        }
+    //
+    //        &.-right {
+    //            right: 0;
+    //
+    //            &:before {
+    //                transform: rotate(45deg);
+    //                left: 0;
+    //            }
+    //        }
+    //    }
+    //
+    //    &-disc {
+    //        & {
+    //            font-size: 0;
+    //            width: 100%;
+    //            z-index: 5;
+    //            position: absolute;
+    //            text-align: center;
+    //            bottom: 40px;
+    //        }
+    //
+    //        a {
+    //            border: 1px solid white;
+    //            border-radius: 50%;
+    //            width: 14px;
+    //            height: 14px;
+    //            display: inline-block;
+    //            position: relative;
+    //            margin-left: 10px;
+    //
+    //            &.active {
+    //                &:before {
+    //                    content: '';
+    //                    display: block;
+    //                    position: absolute;
+    //                    top: 2px;
+    //                    left: 2px;
+    //                    width: 8px;
+    //                    height: 8px;
+    //                    border-radius: 50%;
+    //                    background-color: $white;
+    //                }
+    //            }
+    //
+    //            &:first-child {
+    //                margin-left: 0;
+    //            }
+    //        }
+    //    }
+    //}
 
     @include bp(max-width, $bp-medium) {
         &, li, li:before {
