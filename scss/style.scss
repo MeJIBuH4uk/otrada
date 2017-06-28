@@ -6,6 +6,9 @@
 @import 'main';
 @import "breakpoint";
 
+@import "bxslider";
+@import "lightslider";
+
 .wr {
     max-width: 1180px;
     min-width: 320px;
@@ -103,6 +106,9 @@ header {
 
         &.-fix {
             z-index: 9999;
+            position: fixed;
+            top: 0;
+            width: 100%;
             background-color: rgba(131, 129, 140, 0.81);
         }
     }
@@ -283,7 +289,7 @@ header {
         height: 720px;
     }
 
-    li {
+    li.item {
         & {
             text-align: center;
             height: 720px;
@@ -336,98 +342,93 @@ header {
         }
     }
 
-    //.nav {
-    //    top: 50%;
-    //    position: absolute;
-    //    z-index: 999;
-    //    margin-top: -15px;
-    //    width: 100%;
+    //.lSAction {
+    //    & {
+    //        width: 100%;
+    //        top: 50%;
+    //        z-index:100;
+    //        display: block;
+    //        position: absolute;
+    //        cursor: pointer;
+    //        opacity: 0.7;
     //
-    //    .arrow {
-    //        & {
-    //            width: 17px;
-    //            height: 30px;
-    //            display: block;
-    //            position: absolute;
-    //            cursor: pointer;
-    //            opacity: 0.7;
-    //
-    //            &:hover {
-    //                opacity: 1;
-    //            }
-    //        }
-    //
-    //        &.-left, &.-right {
-    //            &:before {
-    //                content: '';
-    //                display: block;
-    //                position: absolute;
-    //                width: 22px;
-    //                height: 22px;
-    //                border-color: $white;
-    //                border-style: solid;
-    //                border-width: 5px 5px 0 0;
-    //            }
-    //        }
-    //
-    //        &.-left {
-    //            left: 0;
-    //
-    //            &:before {
-    //                transform: rotate(-135deg);
-    //                right: 0;
-    //            }
-    //        }
-    //
-    //        &.-right {
-    //            right: 0;
-    //
-    //            &:before {
-    //                transform: rotate(45deg);
-    //                left: 0;
-    //            }
+    //        &:hover {
+    //            opacity: 1;
     //        }
     //    }
     //
-    //    &-disc {
-    //        & {
-    //            font-size: 0;
-    //            width: 100%;
-    //            z-index: 5;
+    //    .lSPrev, .lSNext {
+    //        position: relative;
+    //
+    //        &:before {
+    //            content: '';
+    //            display: block;
     //            position: absolute;
-    //            text-align: center;
-    //            bottom: 40px;
+    //            width: 22px;
+    //            height: 22px;
+    //            border-color: $white;
+    //            border-style: solid;
+    //            border-width: 5px 5px 0 0;
     //        }
+    //    }
     //
-    //        a {
-    //            border: 1px solid white;
-    //            border-radius: 50%;
-    //            width: 14px;
-    //            height: 14px;
-    //            display: inline-block;
-    //            position: relative;
-    //            margin-left: 10px;
+    //    .lSPrev {
+    //        left: 0;
     //
-    //            &.active {
-    //                &:before {
-    //                    content: '';
-    //                    display: block;
-    //                    position: absolute;
-    //                    top: 2px;
-    //                    left: 2px;
-    //                    width: 8px;
-    //                    height: 8px;
-    //                    border-radius: 50%;
-    //                    background-color: $white;
-    //                }
-    //            }
+    //        &:before {
+    //            transform: rotate(-135deg);
+    //            right: 0;
+    //        }
+    //    }
     //
-    //            &:first-child {
-    //                margin-left: 0;
-    //            }
+    //    .lSNext {
+    //        right: 0;
+    //
+    //        &:before {
+    //            transform: rotate(45deg);
+    //            left: 0;
     //        }
     //    }
     //}
+
+    .lSPager {
+        & {
+            font-size: 0;
+            width: 100%;
+            z-index: 5;
+            position: absolute;
+            text-align: center;
+            bottom: 40px;
+        }
+
+        li {
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: relative;
+            margin-left: 10px;
+
+            &.active {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
 
     @include bp(max-width, $bp-medium) {
         &, li, li:before {
@@ -1164,8 +1165,8 @@ header {
 
 .writingOn {
     & {
-        margin-top: -210px;
-        height: 915px;
+        margin-top: 0;
+        padding-bottom: 50px;
         background-image: url('../img/bg-theatre.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1173,16 +1174,9 @@ header {
         position: relative;
         @extend %clear;
 
-        @include bp(max-width, $bp-large) {
-            margin-top: -350px;
-        }
-
-        @include bp(max-width, $bp-medium) {
-            margin-top: -460px;
-        }
 
         @include bp(max-width, $bp-small-2) {
-            margin-top: -470px;
+            margin-top: 180px;
         }
     }
 
@@ -1388,15 +1382,21 @@ header {
     }
 
     li {
+        text-align: center;
         img {
             max-width: 100%;
         }
+    }
+
+    .lSPager {
+        display: none;
     }
 }
 
 .video {
     & {
         padding: 90px 0;
+        overflow: hidden;
     }
 
     .title {
@@ -1413,8 +1413,13 @@ header {
 
     iframe {
         margin-left: 50%;
+        height: 480px;
         max-width: 100%;
         transform: translate(-50%);
+
+        @include bp(max-width, $bp-small) {
+            height: 300px;
+        }
     }
 }
 
