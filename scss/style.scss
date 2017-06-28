@@ -1388,6 +1388,24 @@ header {
         }
     }
 
+    .lSAction {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        z-index: 9999;
+        top: 50%;
+        margin-top: -25px;
+
+
+        .lSPrev {
+
+        }
+
+        .lSNext {
+
+        }
+    }
+
     .lSPager {
         display: none;
     }
