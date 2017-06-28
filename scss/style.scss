@@ -342,6 +342,16 @@ header {
         }
     }
 
+    .lSAction {
+        > .lSPrev {
+            left: 30px;
+        }
+
+        > .lSNext {
+            right: 30px;
+        }
+    }
+
     //.lSAction {
     //    & {
     //        width: 100%;
@@ -1395,15 +1405,6 @@ header {
         z-index: 9999;
         top: 50%;
         margin-top: -25px;
-
-
-        .lSPrev {
-
-        }
-
-        .lSNext {
-
-        }
     }
 
     .lSPager {
