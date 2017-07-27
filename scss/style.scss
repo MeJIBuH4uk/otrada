@@ -109,7 +109,7 @@ header {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: rgba(131, 129, 140, 0.91);
+            background-color: rgba(50,50,50,0.6);
         }
     }
 
@@ -126,6 +126,7 @@ header {
 
         img {
             display: block;
+            max-width: 230px;
         }
     }
 
