@@ -98,6 +98,22 @@
 body {
     &.-top-pading {
         padding-top: 150px;
+
+        @include bp(max-width, $bp-xlarge) {
+            padding-top: 161px;
+        }
+
+        @include bp(max-width, $bp-large) {
+            padding-top: 233px;
+        }
+
+        @include bp(max-width, $bp-medium) {
+            padding-top: 134px;
+        }
+
+        @include bp(max-width, $bp-small) {
+            padding-top: 169px;
+        }
     }
 }
 
