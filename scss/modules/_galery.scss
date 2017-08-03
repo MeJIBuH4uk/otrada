@@ -1,0 +1,58 @@
+.galery {
+    & {
+        margin-bottom: 30px;
+    }
+
+    > ul {
+        margin: 0 -15px;
+        @extend %clear;
+    }
+
+    li {
+        width: percentage(1 / 4);
+        padding: 0 15px;
+        float: left;
+        margin-bottom: 30px;
+
+        > a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            .img {
+                opacity: 1;
+            }
+        }
+
+        @include bp(max-width, $bp-medium) {
+            width: percentage(1 / 3);
+        }
+
+        @include bp(max-width, $bp-small) {
+            width: percentage(1 / 2);
+        }
+    }
+
+    .box {
+        display: block;
+        position: relative;
+    }
+
+    .img {
+        width: 100%;
+        position: relative;
+        padding-top: 100%;
+        display: block;
+        margin-bottom: 15px;
+        background-size: cover;
+        opacity: .8;
+    }
+
+    p {
+        position: absolute;
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+        padding: 10px;
+        bottom: 0;
+    }
+}

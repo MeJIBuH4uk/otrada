@@ -1,0 +1,118 @@
+header {
+    & {
+        position: relative;
+        padding-bottom: 20px;
+        background-color: #83818c;
+        text-decoration: none;
+        color: $white;
+
+        &.-fix {
+            z-index: 9999;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(50, 50, 50, 0.6);
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        & {
+            float: left;
+            margin-top: 15px;
+            margin-left: 10px;
+            width: 200px;
+
+            @include bp(max-width, $bp-large) {
+                width: 180px;
+                margin: 15px auto;
+            }
+
+            @include bp(max-width, $bp-medium) {
+                width: 160px;
+            }
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .top-menu {
+        & {
+            float: right;
+            margin-top: 30px;
+
+            @include bp(max-width, $bp-medium) {
+                margin-top: 10px;
+            }
+        }
+
+        a {
+            font-family: $font-base;
+            text-transform: uppercase;
+            border-top: 2px solid transparent;
+            margin-left: 20px;
+            font-size: 16px;
+            padding-top: 7px;
+            float: left;
+            color: $white;
+
+            &.active {
+                border-top-color: $yellow;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+
+    @include bp(max-width, $bp-large) {
+        & {
+            padding-top: 1px;
+        }
+
+        .search, .top-menu, .logo {
+            float: none;
+            display: block;
+        }
+
+        .search {
+            margin: 15px auto;
+            display: none;
+        }
+
+        .top-menu {
+            text-align: center;
+
+            a {
+                display: inline-block;
+                float: none;
+            }
+        }
+    }
+
+    @include bp(max-width, $bp-small) {
+        .logo {
+            width: 180px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .search {
+            width: 100%;
+            display: none;
+        }
+    }
+}

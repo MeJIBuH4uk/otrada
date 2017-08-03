@@ -32,6 +32,10 @@ p, body, html {
 li {
     list-style: none;
 }
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
 
 h2 {
     font-size: 24px;
@@ -74,4 +78,25 @@ a {
     &:active {
         color: orange;
     }
+}
+
+.wr {
+    max-width: 1180px;
+    min-width: 320px;
+    padding: 0 35px;
+    margin: 0 auto;
+    position: relative;
+
+    &-2 {
+        max-width: 1900px;
+    }
+}
+
+.bg {
+    background: #f9fafe;
+}
+
+
+.content {
+
 }

@@ -1,0 +1,138 @@
+footer {
+    & {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        background-image: url('../img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        clear: both;
+        color: $white;
+    }
+
+    h3 {
+        font-size: 27px;
+        font-weight: 500;
+        color: $green;
+        margin-bottom: 20px
+    }
+
+    .title {
+        @extend %headers;
+        text-align: center;
+
+        h2:before, h2, strong {
+            color: $white;
+        }
+    }
+
+    .address {
+        @extend %clear;
+        margin-bottom: 50px;
+
+        p {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: $white;
+        }
+
+        address {
+            font-size: 16px;
+
+            span {
+                font-size: 15px;
+                display: block;
+                font-weight: 500;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+        }
+
+        li {
+            width: percentage(1/3);
+            float: left;
+
+            a {
+                font-size: 14px;
+                color: $white;
+                text-transform: lowercase;
+                text-decoration: none;
+                border-bottom: 1px dashed $white;
+
+                &:hover {
+                    border-bottom: 1px dashed transparent;
+                }
+            }
+
+            @include bp(max-width, $bp-large) {
+                width: percentage(1);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            @include bp(max-width, $bp-small) {
+                &.mail {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyrights {
+        @include bp(max-width, $bp-medium) {
+            text-align: center;
+        }
+    }
+
+    .map {
+        clear: both;
+        margin-bottom: 15px;
+    }
+
+    .soc {
+        float: right;
+        @extend %clear;
+
+        a {
+            float: left;
+            width: 31px;
+            height: 31px;
+            margin-right: 15px;
+            border-radius: 50%;
+            background-image: url("../img/soc.png");
+
+            &.tw {
+                background-position: -35px 0;
+            }
+
+            &.vk {
+                background-position: -68px 0;
+            }
+
+            &.fb {
+                background-position: -104px 0;
+            }
+
+            &.rs {
+                background-position: -140px 0;
+            }
+
+            &.ok {
+                background-position: -174px 0;
+            }
+        }
+
+        @include bp(max-width, $bp-medium) {
+            float: none;
+            text-align: center;
+            margin-bottom: 15px;
+
+            a {
+                display: inline-block;
+                float: none;
+            }
+        }
+    }
+}

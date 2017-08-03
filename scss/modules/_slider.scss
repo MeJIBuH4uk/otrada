@@ -1,0 +1,175 @@
+.slider-mini {
+    & {
+        height: 335px;
+        padding: 50px 0;
+        background: #1a1416;
+        @extend %clear;
+    }
+
+    li {
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .lSAction {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        z-index: 9999;
+        top: 50%;
+        margin-top: -25px;
+    }
+
+    .lSPager {
+        display: none;
+    }
+}
+
+.slider {
+    & {
+        clear: both;
+        position: relative;
+    }
+
+    &, li.item {
+        height: 920px;
+    }
+
+    li.item {
+        & {
+            text-align: center;
+            position: relative;
+            background-position: bottom center;
+            padding-top: 413px;
+
+            &.item:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                height: 825px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.45);
+            }
+        }
+
+        h2, p, .slideButton {
+            color: $white;
+            font-family: $font-base;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 100%;
+            margin-bottom: 51px;
+        }
+
+        .slideButton {
+            width: 265px;
+            border: 2px solid rgba(255, 255, 255, 0.76);
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+            padding: 14px 0;
+            text-transform: uppercase;
+        }
+    }
+
+    .lSAction {
+        > .lSPrev {
+            left: 30px;
+        }
+
+        > .lSNext {
+            right: 30px;
+        }
+    }
+
+    .lSPager {
+        & {
+            font-size: 0;
+            width: 100%;
+            z-index: 5;
+            position: absolute;
+            text-align: center;
+            bottom: 40px;
+        }
+
+        li {
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            position: relative;
+            margin-left: 10px;
+
+            &.active {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @include bp(max-width, $bp-medium) {
+        &, li.item, li:before {
+            height: 660px;
+        }
+
+        li.item {
+            padding-top: 380px;
+            background-position: top;
+
+            h2 {
+                font-size: 35px;
+                padding: 0 40px;
+            }
+
+            p {
+                font-size: 18px;
+                padding: 0 20px;
+            }
+
+            .slideButton {
+                width: 200px;
+            }
+        }
+
+        .nav .arrow {
+            &.-left {
+                left: 20px;
+            }
+
+            &.-right {
+                right: 20px;
+            }
+        }
+    }
+}
